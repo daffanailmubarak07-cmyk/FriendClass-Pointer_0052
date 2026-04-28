@@ -6,7 +6,7 @@ class mahasiswa
     int nim;
     void showNim()
     {
-        cout << “No Induk = “ <<nim <<endl;
+        cout << "No Induk = " <<nim <<endl;
     }
 };
 
@@ -19,8 +19,8 @@ int main()
     refMhs.nim = 2; //member access operator
     mhs.showNim();
 
-   mahasiswa *pMhs = &mhs; //pointer dereference pmhs
+    mahasiswa *pMhs = &mhs; //pointer dereference pmhs
     pMhs->nim = 3; //arrow operator
     pMhs->showNim();
     return 0;
-} 
+}
