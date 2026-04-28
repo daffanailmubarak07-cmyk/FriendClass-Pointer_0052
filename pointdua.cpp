@@ -10,17 +10,11 @@ class mahasiswa
     }
 };
 
-int main()
+int main ()
 {
-    mahasiswa mhs{1}; //object mhs
-    mhs.showNim(); //member access operator
-    
-    mahasiswa &refMhs = mhs; //pointer referance refmhs
-    refMhs.nim = 2; //member access operator
-    mhs.showNim();
-
-    mahasiswa *pMhs = &mhs; //pointer dereference pmhs
-    pMhs->nim = 3; //arrow operator
-    pMhs->showNim();
+    mahasiswa *mhs = new mahasiswa{1}; //pointer object mhs
+    mhs->nim = 2;
+    mhs->showNim();
+    delete mhs;
     return 0;
 }
