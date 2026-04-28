@@ -78,17 +78,3 @@ public:
     }
 };
 
-int main() {
-    LayangLayang l;
-    BelahKetupat b;
-
-    l.input();
-    l.output();
-
-    b.input();
-    b.output();
-
-    b.tampilKelilingLayang(l);
-
-    return 0;
-}
